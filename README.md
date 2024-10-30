@@ -1,6 +1,6 @@
 # 📦 Toolbox Test Webapp
 
-Bienvenido al **Toolbox Test Webapp**! Esta aplicación está diseñada para facilitar la búsqueda de nombres y ofrecer una experiencia de usuario fluida con opciones de tema claro y oscuro. A continuación, encontrarás toda la información necesaria para instalar, ejecutar y entender la aplicación.
+¡Bienvenido al proyecto **Toolbox Test Webapp**! Este README te guiará a través de la instalacióny ejecución de la APP de manera clara y sencilla.
 
 ## 🚀 Instalación de Dependencias
 
@@ -45,6 +45,8 @@ Para garantizar que la aplicación se ejecute en la versión **16 de Node.js**, 
    ```bash
    npm run docker:full-init
    ```
+
+Si levantas la APP con docker, se expondrá en el puerto 80, [http://localhost:80](http://localhost:3000).
 
 **Importante**: Si ya hay una instancia del contenedor corriendo, asegúrate de detenerla antes de iniciar una nueva. Para detener el contenedor, ejecuta:
 
