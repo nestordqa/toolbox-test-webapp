@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 📦 Toolbox Test Webapp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenido al **Toolbox Test Webapp**! Esta aplicación está diseñada para facilitar la búsqueda de nombres y ofrecer una experiencia de usuario fluida con opciones de tema claro y oscuro. A continuación, encontrarás toda la información necesaria para instalar, ejecutar y entender la aplicación.
 
-## Available Scripts
+## 🚀 Instalación de Dependencias
 
-In the project directory, you can run:
+Para comenzar, asegúrate de tener **Node.js** instalado en tu máquina. Luego, ejecuta el siguiente comando para instalar las dependencias necesarias:
 
-### `npm start`
+```bash
+npm i
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🌐 Levantar la Aplicación
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Sin Docker
 
-### `npm test`
+Si prefieres ejecutar la aplicación sin Docker, utiliza el siguiente comando:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm run start
+```
 
-### `npm run build`
+La aplicación se ejecutará en el puerto **3000** y podrás acceder a ella en [http://localhost:3000](http://localhost:3000).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Con Docker
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para garantizar que la aplicación se ejecute en la versión **16 de Node.js**, puedes utilizar Docker. Sigue estos pasos:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Crear la imagen**:
+   ```bash
+   npm run docker:image
+   ```
 
-### `npm run eject`
+2. **Crear y ejecutar el contenedor**:
+   ```bash
+   npm run docker:up
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Detener la ejecución del contenedor**:
+   ```bash
+   npm run docker:down
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Inicio completo (crear imagen y contenedor)**:
+   ```bash
+   npm run docker:full-init
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Importante**: Si ya hay una instancia del contenedor corriendo, asegúrate de detenerla antes de iniciar una nueva. Para detener el contenedor, ejecuta:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run docker:stop
+```
 
-## Learn More
+## 🛠️ Descripción de la Aplicación
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+La aplicación cuenta con las siguientes características:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Barra de búsqueda**: Permite ingresar texto y buscar coincidencias en todos los nombres disponibles.
+- **Cambio de tema**: Puedes alternar entre **modo claro** y **modo oscuro** con un simple clic.
+- **Listado de archivos**: Visualiza todos los archivos sin errores.
 
-### Code Splitting
+## 📦 Versiones Utilizadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Node**: v16
+- **Framework**: React v18.3.1
+- **Estilos**: Bootstrap v5.3.3
+- **Contexto Global**: React-Redux v9.1.2
+- **Alertas**: SweetAlert2 v11.14.4
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Disfruta de tu experiencia con **Toolbox Test Webapp**! 🎉# toolbox-test-webapp
