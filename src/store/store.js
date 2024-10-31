@@ -1,7 +1,7 @@
 // Importa las funciones necesarias de Redux
 import { createStore, applyMiddleware } from 'redux';
 // Importa el rootReducer que combina todos los reducers de la aplicación
-import rootReducer from './reducers'; // Asegúrate de crear este archivo
+import rootReducer from './reducers';
 // Importa el middleware thunk para manejar acciones asíncronas
 import { thunk } from 'redux-thunk';
 

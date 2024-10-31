@@ -8,9 +8,9 @@ import { setData, setLoading } from '../store/actions';
 import { fetchFiles } from '../utils/fetchingData';
 
 export const FilesTable = () => {
-    // Inicializa dispatch para enviar acciones a la tienda Redux
+    // Inicializa dispatch para enviar acciones a la store Redux
     const dispatch = useDispatch();
-    // Extrae el estado de carga, los datos a renderizar y el tema de la tienda Redux
+    // Extrae el estado de carga, los datos a renderizar y el tema de la store Redux
     const { loading, render, theme } = useSelector((state) => state);
 
     useEffect(() => {
@@ -18,7 +18,7 @@ export const FilesTable = () => {
         dispatch(setLoading(true));
         fetchFiles()
             .then((res) => {
-                // Despacha la acción para establecer los datos obtenidos en la tienda
+                // Despacha la acción para establecer los datos obtenidos en la store
                 dispatch(setData(res));
             })
             .catch((e) => console.error(e)) // Registra cualquier error durante la obtención
